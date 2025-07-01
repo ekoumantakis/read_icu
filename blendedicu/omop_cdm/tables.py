@@ -6,7 +6,7 @@ import pyarrow as pa
 
 class CDMTables:
     def __init__(self):
-        pth = 'auxillary_files/OMOP_CDMv5.4_Field_Level.csv'
+        pth = 'blendedicu/auxillary_files/OMOP_CDMv5.4_Field_Level.csv'
         self.field_level = pd.read_csv(pth)
         self._dtype_mapping = {'integer': int,
                                'Integer': int,

@@ -19,7 +19,7 @@ from omopize.medication_mapping import MedicationMapping
 from omopize.omop_diagnoses import DiagnosesMapping
 from omop_cdm import omop_parquet 
 
-pth_dic = json.load(open('paths.json', 'r'))
+pth_dic = json.load(open('blendedicu/paths.json', 'r'))
 
 omop_parquet.convert_to_parquet(pth_dic)
 

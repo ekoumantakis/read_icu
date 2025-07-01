@@ -1,3 +1,3 @@
-from omop_cdm.tables import CDMTables
+from blendedicu.omop_cdm.tables import CDMTables
 
 cdm=CDMTables()

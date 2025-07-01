@@ -1,2 +1,4 @@
 blendedicu/auxillary_files/OMOP_vocabulary/
 .vs/
+blendedicu/auxillary_files/medication_mapping_files/med_concept_ids.parquet
+blendedicu/auxillary_files/medication_mapping_files/ohdsi_icu_medications.csv
