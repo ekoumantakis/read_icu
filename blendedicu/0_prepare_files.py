@@ -14,10 +14,10 @@ source database.
 '''
 import json
 
-from omopize.omop_medications import OMOP_Medications
-from omopize.medication_mapping import MedicationMapping
-from omopize.omop_diagnoses import DiagnosesMapping
-from omop_cdm import omop_parquet 
+from blendedicu.omopize.omop_medications import OMOP_Medications
+from blendedicu.omopize.medication_mapping import MedicationMapping
+from blendedicu.omopize.omop_diagnoses import DiagnosesMapping
+from blendedicu.omop_cdm import omop_parquet
 
 pth_dic = json.load(open('blendedicu/paths.json', 'r'))
 
@@ -28,8 +28,8 @@ om = OMOP_Medications(pth_dic)
 ingredient_to_drug = om.run()
 
 mm = MedicationMapping(pth_dic,
-                       datasets=['hirid', 
-                                 'amsterdam',
+                       datasets=['amsterdam',
+                                 'hirid',
                                  'mimic4',
                                  'mimic3',
                                  'eicu'])
